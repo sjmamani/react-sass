@@ -1,0 +1,135 @@
+@import './index.scss';
+
+#app {
+  @include flexbox();
+  width: 100vw;
+  height: 100vh;
+
+  nav {
+    @include flexbox(flex-start, center, column);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: $nav-width;
+    background: $azul;
+    color: $blanco;
+
+    ul {
+      @include flexbox(flex-start, center, column);
+
+      li {
+        margin: 1rem 0;
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+        img {
+          width: 100%;
+        }
+
+        &:hover {
+          cursor: pointer;
+          font-weight: bold;
+          color: $azul;
+          background: $blanco;
+        }
+      }
+    }
+
+    @include phone() {
+      @include flexbox($jc: flex-start, $fd: row);
+      width: 100vw;
+      height: $nav-height;
+
+      ul {
+        @include flexbox(flex-start, center, row);
+        height: 100%;
+
+        li {
+          margin: 0 1rem;
+          height: 100%;
+          img {
+            height: 100%;
+          }
+          a {
+            margin: auto;
+          }
+        }
+      }
+    }
+    @include tablet() {
+      @include flexbox($jc: flex-start, $fd: row);
+      width: 100vw;
+      height: $nav-height;
+
+      ul {
+        @include flexbox(flex-start, center, row);
+        height: 100%;
+
+        li {
+          margin: 0 1rem;
+          height: 100%;
+          img {
+            height: 100%;
+          }
+          a {
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    @include flexbox($fd: row);
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 100%;
+    // height: 100%;
+
+    > div {
+      @include tablet () {
+        padding-left: 0;
+        padding-top: $nav-height + 1rem;
+      }
+      @include phone () {
+        padding-left: 0;
+        padding-top: $nav-height + 1rem;
+      }
+      @include flexbox($jc: flex-start);
+      width: 100vw;
+      min-height: 100vh;
+      padding-left: $nav-width;
+    }
+
+    footer {
+      width: 100vw;
+      height: 100%;
+      color: $blanco;
+
+      > div {
+        height: 50vh;
+        width: 100vw;
+
+        &:first-child {
+          background: url('./assets/alexandros-nicolopoulos-Q_vvoClk0Pk-unsplash.jpg');
+          background-size: cover;
+        }
+
+        &:last-child {
+          @include flexbox();
+
+          ul {
+            @include flexbox($fd: row);
+            margin: 1rem;
+
+            li {
+              margin: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,24 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Cards from './pages/Cards';
+import Formulario from './pages/Formulario';
+import Galeria from './pages/Galeria';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app">
+      <nav>
+        <ul>
+          <li><img src="https://btf.grupoassa.com/imgs/profile_default.png" alt="avatar.png" /></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#formulario">Formulario</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </nav>
+      <main>
+        <Cards />
+        <Formulario />
+        <Galeria />
+        <footer>
+          <div>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+              <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+            <p>Copyright © 2020 Joaquin Mamani</p>
+            <p><a href="http://www.grupoassa.com" target="_blank">Términos y Condiciones</a></p>
+          </div>
+        </footer>
+      </main>
     </div>
   );
 }
