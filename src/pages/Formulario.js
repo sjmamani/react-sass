@@ -4,41 +4,50 @@ import './Formulario.scss';
 export default function Formulario() {
     return(
         <div id="formulario">
-            <h1>Formulario</h1>
-            <h2>Subtitle formulario</h2>
-                <p>Tres años, siete meses y una semana después del referéndum en el que el 51,9% de los británicos votó a favor de salir de la Unión Europea (UE), el Brexit se convirtió en un hecho consumado este viernes, 308 días más tarde de lo previsto. A las 11 de la noche de Londres (la medianoche en Bruselas, sede de la UE), el Reino Unido quedó automáticamente fuera del bloque político y económico al que se había incorporado en 1973.</p>
+            <div>
+                <h1>¿Tienes un perro para poner en adopción?</h1>
+                <h2>Complete el formulario</h2>
+                <p>Una vez enviado el formulario, uno de nuestros asistentes se comunicará con usted.</p>
+            </div>
             <div>
                 <div>
                     <label>Nombre</label>
                     <input type="text"/>
                 </div>
                 <div>
-                    <label>Sexo</label>
+                    <label>Edad</label>
                     <select>
-                        <option defaultValue>Seleccione su sexo</option>
-                        <option>Masculino</option>
-                        <option>Femenino</option>
+                        <option defaultValue>Seleccione edad del perro</option>
+                        <option>0 - 2 años</option>
+                        <option>3 - 7 años</option>
+                        <option>+8 años</option>
                     </select>
                 </div>
                 <div>
+                    <label>Colores</label>
                     <div>
-                        <input type="checkbox" /><label>Perro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" /><label>Gato</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" /><label>Hámster</label>
+                        <div>
+                            <input type="checkbox" /><span>Negro</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" /><span>Marrón</span>
+                        </div>
+                        <div>
+                            <input type="checkbox" /><span>Blanco</span>
+                        </div>
                     </div>
                 </div>
                 <div>
+                    <label>Sexo</label>
                     <div>
-                        <input type="radio" name="sexo" />
-                        <label>Masculino</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="sexo" />
-                        <label>Femenino</label>
+                        <div>
+                            <input type="radio" name="sexo" />
+                            <span>Macho</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" />
+                            <span>Hembra</span>
+                        </div>
                     </div>
                 </div>
                 <textarea placeholder="Comentarios"></textarea>

@@ -1,18 +1,22 @@
 @import './reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-//------VARIABLES------
+//------COLORES------
+$amarillo: #f5af19;
+$crema: #ffffd8;
+$cielo: #b5ead7;
+$purpura: #c7ceea;
 $azul: #366bcf;
-$azul1: #2193b0;
-$azul2: #6dd5ed;
-$asteroid1: #0f2027;
-$asteroid2: #203a43;
-$asteroid3: #2c5364;
-$fuego1: #f12711;
-$fuego2: #f5af19;
-$blanco: #f0f0f0;
+$blanco: #fff;
+$gris: #f0f0f0;
 $fondo: #120d0a;
+
+//------FUENTES-------
 $fuente: 'Poppins';
+$h1: 2rem;
+$h2: 1rem;
+
+//------TAMAÑOS-------
 $esquina: 1rem;
 $nav-width: 10rem;
 $nav-height: 5rem;
@@ -48,9 +52,34 @@ $desktop: 1024px;
   flex-direction: $fd;
 }
 
+@mixin boton($bg: $amarillo, $text_c: $blanco) {
+  background: $bg;
+  color: $text_c;
+  text-align: -webkit-center;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0 0.5rem;
+
+  @if ($bg == $blanco) {
+    border: 1px solid $text_c;
+  }
+
+  &:hover {
+    background-color: darken($bg, 5%);
+  }
+}
+
 // -----EXTENDS-------
 %sombra {
   box-shadow: 2px 1px 5px #000;
+}
+
+%card {
+  @extend %sombra;
+  margin: 1rem;
+  width: $card-width;
+  background: $blanco;
+  border-radius: $esquina;
 }
 
 body {
@@ -59,34 +88,36 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: $h1;
   font-weight: bold;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: $h2;
   font-weight: bold;
   margin: 1rem 0;
 }
 
 p {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 1.8;
+  padding: 0 0.5rem;
+}
+
+span {
+  margin: 0 1rem 0 0.5rem;
 }
 
 label {
-  margin: 0 1rem;
+  font-weight: bold;
 }
 
-button {
-  text-align: -webkit-center;
-  background: $azul;
-  cursor: pointer;
-  color: $blanco;
-  padding: 1rem;
-
-  &:hover {
-      background-color: $azul2;
-  }
+input[type=text],
+textarea,
+select {
+  background: $blanco;
+  border-bottom: 1px solid $amarillo;
+  padding-left: 0.5rem;
+  width: 50%;
 }

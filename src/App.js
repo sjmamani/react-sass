@@ -2,6 +2,9 @@ import React from 'react';
 import Cards from './pages/Cards';
 import Formulario from './pages/Formulario';
 import Galeria from './pages/Galeria';
+import facebookLogo from './assets/iconos/facebook.png';
+import twitterLogo from './assets/iconos/twitter.png';
+import instagramLogo from './assets/iconos/instagram.png';
 import './App.scss';
 
 function App() {
@@ -9,7 +12,14 @@ function App() {
     <div id="app">
       <nav>
         <ul>
-          <li><img src="https://btf.grupoassa.com/imgs/profile_default.png" alt="avatar.png" /></li>
+          <li>
+            <img src="https://btf.grupoassa.com/imgs/profile_default.png" alt="avatar.png" />
+            <div>
+              <span>Joaquin Mamani</span>
+              <span>8791</span>
+              <span>jmamani@grupoassa.com</span>
+            </div>
+          </li>
           <li><a href="#cards">Cards</a></li>
           <li><a href="#formulario">Formulario</a></li>
           <li><a href="#galeria">Galería</a></li>
@@ -24,12 +34,24 @@ function App() {
           </div>
           <div>
             <ul>
-              <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-              <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-              <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+              <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                  <img src={facebookLogo} alt="logo.png" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                  <img src={twitterLogo} alt="logo.png" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src={instagramLogo} alt="logo.png" />
+                </a>
+              </li>
             </ul>
             <p>Copyright © 2020 Joaquin Mamani</p>
-            <p><a href="http://www.grupoassa.com" target="_blank">Términos y Condiciones</a></p>
+            <p><a href="http://www.grupoassa.com" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a></p>
           </div>
         </footer>
       </main>

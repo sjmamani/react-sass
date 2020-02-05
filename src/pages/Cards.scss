@@ -1,11 +1,11 @@
 @import "../index.scss";
 
 #cards {
-    background: linear-gradient($azul1, $azul2);
+    background: $blanco;
     > div {
         @include flexbox();
 
-        // Cards
+        // Contenedor de cards
         &:last-child {
             @include flexbox($fd: row);
             flex-wrap: wrap;
@@ -15,24 +15,27 @@
             // Cada card
             > div {
                 @include flexbox();
-                @extend %sombra;
-                margin: 1rem;
-                width: $card-width;
-                background: $blanco;
-                border-radius: $esquina;
+                @extend %card;
 
                 img {
                     width: 100%;
                     border-radius: $esquina $esquina 0 0;
                 }
 
+                span {
+                    margin-top: 1rem;
+                }
+
                 // Botones
                 div {
                     @include flexbox($fd: row);
                     margin: 2rem 0;
-
-                    button {
-                        margin: 0 1rem;
+                    
+                    > button {
+                        @include boton();
+                        &:first-child {
+                            @include boton($blanco, $amarillo);
+                        }
                     }
                 }
             }
