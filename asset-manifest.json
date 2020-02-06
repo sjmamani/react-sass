@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-sass/static/css/main.e6fe2efa.chunk.css",
+    "main.js": "/react-sass/static/js/main.02c41ec0.chunk.js",
+    "main.js.map": "/react-sass/static/js/main.02c41ec0.chunk.js.map",
+    "runtime-main.js": "/react-sass/static/js/runtime-main.1f8b0bb1.js",
+    "runtime-main.js.map": "/react-sass/static/js/runtime-main.1f8b0bb1.js.map",
+    "static/js/2.63437a84.chunk.js": "/react-sass/static/js/2.63437a84.chunk.js",
+    "static/js/2.63437a84.chunk.js.map": "/react-sass/static/js/2.63437a84.chunk.js.map",
+    "index.html": "/react-sass/index.html",
+    "precache-manifest.91535f0209aa40c00001413a99bfa94f.js": "/react-sass/precache-manifest.91535f0209aa40c00001413a99bfa94f.js",
+    "service-worker.js": "/react-sass/service-worker.js",
+    "static/css/main.e6fe2efa.chunk.css.map": "/react-sass/static/css/main.e6fe2efa.chunk.css.map",
+    "static/js/2.63437a84.chunk.js.LICENSE": "/react-sass/static/js/2.63437a84.chunk.js.LICENSE",
+    "static/media/App.scss": "/react-sass/static/media/alexandros-nicolopoulos-Q_vvoClk0Pk-unsplash.831c5581.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f8b0bb1.js",
+    "static/js/2.63437a84.chunk.js",
+    "static/css/main.e6fe2efa.chunk.css",
+    "static/js/main.02c41ec0.chunk.js"
+  ]
+}
