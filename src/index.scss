@@ -80,6 +80,12 @@ $desktop: 1024px;
   width: $card-width;
   background: $blanco;
   border-radius: $esquina;
+  animation: scale-in-center 0.5s linear both;
+}
+
+//------GLOBAL------
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -92,6 +98,7 @@ h1 {
   font-weight: bold;
   margin: 2rem 0;
   text-align: center;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 h2 {
@@ -99,6 +106,7 @@ h2 {
   font-weight: bold;
   margin: 1rem 0;
   text-align: center;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 p {
@@ -106,6 +114,7 @@ p {
   letter-spacing: 1px;
   line-height: 1.8;
   padding: 0 0.5rem;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 span {
@@ -123,4 +132,27 @@ select {
   border-bottom: 1px solid $amarillo;
   padding-left: 0.5rem;
   width: 50%;
+}
+
+//------ANIMACIONES-------
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
