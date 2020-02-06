@@ -7,7 +7,7 @@ export default function Cards() {
             <div>
                 <h1>Adopte un perro</h1>
                 <h2>"Los perros no son toda tu vida, pero hacen tu vida completa"</h2>
-                <p>Tres años, siete meses y una semana después del referéndum en el que el 51,9% de los británicos votó a favor de salir de la Unión Europea (UE), el Brexit se convirtió en un hecho consumado este viernes, 308 días más tarde de lo previsto. A las 11 de la noche de Londres (la medianoche en Bruselas, sede de la UE), el Reino Unido quedó automáticamente fuera del bloque político y económico al que se había incorporado en 1973.</p>
+                <p>Adoptar es un acto de amor y de responsabilidad, por eso es necesario estar completamente seguros de que estamos capacitados y listos para tener un perro. Un animal de compañía dependerá toda su vida de nosotros. Recordá que un perro puede vivir entre 15 y 20 años y estás asumiendo un compromiso serio por todo ese tiempo.</p>
             </div>
             <div>
                 <div>
